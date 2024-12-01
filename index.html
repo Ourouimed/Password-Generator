@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random password generator</title>
+</head>
+<body>
+    <div class="container">
+        <h3 style="margin-bottom: 10px;">Random Password generator</h3>
+        <div class="input">
+            <input type="text" id="inputPass" placeholder="Generated Password goes here" readonly>
+            <button id="Copy">
+                <ion-icon name="copy-outline"></ion-icon>
+            </button>
+        </div>
+        <p id="msg"></p>
+        <div class="pass-length">
+            <label for="">Password Length</label>
+            <div class="len-range">
+                <input id="range-inp" type="range" min="5" value="10" max="30"> <span id="range-value"></span>
+            </div>
+        </div>
+        <div class="settings">
+            <p>Settings</p>
+            <div class="settings-props">
+                <div class="check">
+                    <label for="lowercase">Lowercase</label>
+                    <input id="lowercase" type="checkbox" checked disabled>
+                </div>
+                <div class="check">
+                    <label for="upercase">Upercase</label>
+                    <input id="upercase" type="checkbox">
+                </div>
+                <div class="check">
+                    <label for="numbers">Numbers</label>
+                    <input id="numbers" type="checkbox">
+                </div>
+                <div class="check">
+                    <label for="symbols">Symbols</label>
+                    <input id="symbols" type="checkbox">
+                </div>
+            </div>
+        </div>
+        <button id="Generate">Generate</button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
